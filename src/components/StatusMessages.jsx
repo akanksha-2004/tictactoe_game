@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 
 const StatusMessages = ({ winner, isXNext, squares }) => {
@@ -39,7 +41,7 @@ const StatusMessages = ({ winner, isXNext, squares }) => {
     return null;
   };
 
-  return <div> className="status-message">{renderStatusMessage()}</div>;
+  return <h2 className="status-message">{renderStatusMessage()}</h2>;
 };
 
 export default StatusMessages;
